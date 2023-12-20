@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Admin SignEase</title>
+    <link rel="icon" href="./Assets/image/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Sidebar section -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-logo">
+                <span class="image">
+                    <img src="./Assets/image/LogoSE.png" alt="SignEase">
+                </span>
+                <span class="text name">SignEase</span>
+                <!-- <div class="text header-text">
+                    <span class="name">SignEase</span>
+                </div> -->
+            </div>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="Dashboard.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-group icon'></i>
+                            <span class="text nav-text">Users</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-receipt icon'></i>
+                            <span class="text nav-text">Roles</span>
+                        </a>
+                    </li> 
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-file-doc icon'></i>
+                            <span class="text nav-text">Document</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-food-menu icon'></i>
+                            <span class="text nav-text">Pages</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="./Login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------ Home section --------------->
+    <section class="home close">
+        <div class="topbar">
+            <div class="toggle">
+                <i class='bx bx-menu '></i>
+            </div>
+            <div class="search">
+                <label for="#">
+                    <input type="text" placeholder="Search">
+                    <i class='bx bx-search'></i>
+                </label>
+            </div>
+            <div class="profile-info">
+                <img src="./Assets/image/LuanT2.png" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h3>Dashboard</h3>
+            </div>
+            <div class="details">
+                <div class="recent-details">
+                    <div class="cardHeader">
+                        <h3>Users</h3>
+                        <div class="search">
+                            <label for="#">
+                                <input type="text" placeholder="Search">
+                                <i class='bx bx-search'></i>
+                            </label>
+                        </div>
+                        <button id="AddButton" type=" button" class="btn" onclick="add()">+Add User</button>
+                        
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>User</td>
+                                <td>Username</td>
+                                <td>Email</td>
+                                <td>Role</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>26211236334</td>
+                                <td>Dương Nguyễn Công Luận</td>
+                                <td>Congluan108</td>
+                                <td>duongngyuencongluan@gmail.com</td>
+                                <td>Student</td>
+                                <td>
+                                    <div class="icon">
+                                        <i class='bx bxs-edit '></i>
+                                        <i class='bx bx-trash' onclick="deleteUser(this)"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26211236335</td>
+                                <td>Ngô Bá Khá</td>
+                                <td>Bakha108</td>
+                                <td>ngobakha@gmail.com</td>
+                                <td>Student</td>
+                                <td>
+                                    <div class="icon">
+                                        <i class='bx bxs-edit '></i>
+                                        <i class='bx bx-trash' onclick="deleteUser(this)"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26211236334</td>
+                                <td>Dương Nguyễn Công Luận</td>
+                                <td>Congluan108</td>
+                                <td>duongngyuencongluan@gmail.com</td>
+                                <td>Student</td>
+                                <td>
+                                    <div class="icon">
+                                        <i class='bx bxs-edit'></i>
+                                        <i class='bx bx-trash' onclick="deleteUser(this)"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26211236334</td>
+                                <td>Dương Nguyễn Công Luận</td>
+                                <td>Congluan108</td>
+                                <td>duongngyuencongluan@gmail.com</td>
+                                <td>Student</td>
+                                <td>
+                                    <div class="icon">
+                                        <i class='bx bxs-edit'></i>
+                                        <i class='bx bx-trash' onclick="deleteUser(this)"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26211236334</td>
+                                <td>Dương Nguyễn Công Luận</td>
+                                <td>Congluan108</td>
+                                <td>duongngyuencongluan@gmail.com</td>
+                                <td>Student</td>
+                                <td>
+                                    <div class="icon">
+                                        <i class='bx bxs-edit '></i>
+                                        <i class='bx bx-trash' onclick="deleteUser(this)"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26211236334</td>
+                                <td>Dương Nguyễn Công Luận</td>
+                                <td>Congluan108</td>
+                                <td>duongngyuencongluan@gmail.com</td>
+                                <td>Student</td>
+                                <td>
+                                    <div class="icon">
+                                        <i class='bx bxs-edit '></i>
+                                        <i class='bx bx-trash' onclick="deleteUser(this)"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+
+                    </table>
+                    <div class="switch">
+                        <ul>
+                            <li><i class='bx bx-chevron-left'></i></li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li><i class='bx bx-chevron-right' ></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="main_footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="box_footer">
+                        <p>
+                            Copyright @ 2023 by C1SE.10
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="./Assets/js/script.js"></script>
+  </body>
+</html>

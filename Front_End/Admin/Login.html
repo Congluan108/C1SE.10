@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./Assets/css/login.css" />
+    <title>Login Admin</title>
+    <link rel="icon" href="./Assets/image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <form id="LoginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" id="username">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" id="password">
+                <i class="bx bxs-lock-open-alt"></i>
+                <i class='bx bxs-lock-alt' id="show-password" onclick="togglePassword()"></i>
+            </div>
+            <button id="myButton" type="button" class="btn" onclick="login()">Login</button>
+        </form>
+    </div>
+    
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>

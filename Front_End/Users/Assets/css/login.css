@@ -1,0 +1,127 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dcdcdc1c;
+}
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff00;
+    border-radius: 10px;
+    padding: 20px 30px;
+
+}
+
+img{
+    width: 30vh;
+    padding-left: 50px;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.wrapper h3{
+    font-size: 18px;
+    text-align: center;
+    color: #3A3B3C;
+}
+.wrapper h3 .name{
+    text-decoration: none;
+    color:black;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.wrapper .input-box,
+.wrapper .captcha-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(158 158 158 / 40%);
+    border-radius: 20px;
+    font-size: 18px;
+    color: #3A3B3C;
+    padding: 20px 45px 20px 20px;
+}
+.captcha-box{
+    display: flex;
+}
+.captcha-box input{
+    width: 40%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(158 158 158 / 40%);
+    border-radius: 20px 0 0 20px!important;
+    font-size: 18px;
+    color: #3A3B3C;
+    padding: 20px 45px 20px 20px;
+}
+#captchaValue{
+    color: #000;
+    height: 100%;
+    width: 60%;
+    padding: 15px;
+    line-height: 20px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 0 20px 20px 0;
+    border: 2px solid rgb(158 158 158 / 40%);
+    border-left: 2px solid gray;
+}
+.input-box input:focus,
+.captcha-box input:focus{
+    border: 2px solid #3A3B3C;
+}
+.input-box input::placeholder, 
+.captcha-box input::placeholder{
+    color: #3A3B3C;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 10%;
+    transform: translateY(50%);
+    font-size: 20px;
+    color: #3A3B3C;
+}
+
+.wrapper .btn{
+    width: 50%;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #3A3B3C;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    float: right;
+}
+.wrapper .btn:hover{
+    background-color: #3A3B3C;
+    color: #fff;
+}
+

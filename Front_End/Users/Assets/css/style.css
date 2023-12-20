@@ -1,0 +1,394 @@
+
+/* -------------------- HomePage ------------------- */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    color: #363636;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.block {
+    display: block !important;
+}
+.inline {
+    display: inline-block;
+}
+.margin-l {
+    margin-left: 30px;
+}
+.padding-lr-40 {
+    padding: 20px 40px !important;
+}
+.paddding-left30 {
+    padding-left: 20px !important;
+}
+.padding-40 {
+    padding: 40px !important;
+}
+.normal-14 {
+    font-family: "Roboto Regular" !important;
+    font-size: 14px;
+}
+.bold-14 {
+    font-family: "Roboto Bold";
+    font-size: 14px;
+}
+.margin-top-20 {
+    margin: 20px 0 0 20%;
+}
+.text-center {
+    text-align: center;
+}
+.hover-red:hover {
+    color: #c7383e;
+}
+.orange-color {
+    color: #f26522;
+}
+.green-color {
+    color: #3cb878;
+}
+.red-color {
+    color: #ff0000;
+}
+
+/* -------------------- Header ----------------------- */
+.header {
+    background: #760122;
+    padding: 10px;
+    color: #c2c2c2;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.float-left {
+    /* float: right; */
+    display: flex;
+    align-items: center;
+    padding-left: 75%;
+}
+
+.header-noti {
+    /* display: inline-block; */
+    margin-right: 20px;
+    
+}
+.header-noti i{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-user {
+    font-weight: bold;
+    padding-top: 20px;
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+}
+.user-name::before {
+    content: url("../img/icon-user.png");
+    vertical-align: middle;
+    float: right;
+    margin:0 0 10px 5px;
+    
+}
+.user-name::after {
+    content: "|";
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.status {
+    display: none; 
+    position: absolute; 
+    top: 117%; 
+    left: 0; 
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    list-style: none; 
+    padding: 10px; 
+    z-index: 1; 
+}
+
+.status ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.status li {
+    display: inline-block;
+    
+}
+.status li:last-child {
+    padding-top: 10px;
+}
+
+.status a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.status a:hover {
+    color: #ff6347; 
+}
+
+
+/* -------------- Banner ------------------------ */
+.logo img {
+    width: 300px;
+    padding-left: 70px;
+}
+
+.banner-text {
+    font-family: "Roboto Bold";
+    font-size: 30px;
+    color: #c7383e;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding: 0 100px 50px;
+}
+/*---------------------MENU--------------------*/
+#menu a#openup {
+    display: none;
+    font-family: "Roboto Medium";
+    font-size: 14px;
+    color: #fff;
+}
+#menu a#openup .icon-menu {
+    vertical-align: top;
+    margin-left: 15px;
+}
+.menu:before, .menu:after {
+    content: "";
+    display: table;
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu {
+    zoom: 1;
+}
+.nav-slider.toggling {
+    transition: transform 0.35s, opacity 0.35s;
+}
+
+.navbar-toggler {
+    float: left;
+}
+.menu {
+    background: #c7383e;
+    padding: 8px 0;
+}
+#menu {
+    text-align: center;
+}
+#menu ul li {
+    display: inline-block;
+    padding: 0 120px;
+}
+#menu ul li a {
+    padding-top: 20px;
+    font-family: "Roboto Regular";
+    font-size: 20px;
+    color: #fff;
+}
+.icon::before {
+    display: block;
+    text-align: center;
+}
+.home::before {
+    content: url("../img/icon-home.png");
+}
+.contract::before {
+    content: url("../img/icon-contract.png");
+}
+.question::before {
+    content: url("../img/icon-question.png");
+}
+.list::before {
+    content: url("../img/icon-list.png");
+}
+.contact::before {
+    content: url("../img/icon-HSSV.png");
+}
+
+/*---------------------BODY--------------------*/
+.category {
+    background: #ececec;
+    padding: 20px 0;
+}
+.category__title {
+    font-family: "Roboto Medium";
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.category__title p{
+    margin-left: 10%;
+
+}
+
+
+.bg-grey {
+    background: #ececec;
+    padding: 20px 20px 80px 20px;
+    border-radius: 4px;
+    
+}
+.New-add {
+    padding-left: 330px;
+}
+.custom-table {
+    margin-bottom: 0 !important;
+}
+.custom-table th, .custom-table td {
+    border: none !important;
+    padding: 12px 7px;
+}
+.custom-table .bg th {
+    background: #e1e1e1;
+}
+.custom-table .bg td {
+    background: #fff;
+}
+.table thead th {
+    vertical-align: middle;
+}
+.border-radius--topleft {
+    border-radius: 6px 0 0 6px;
+}
+.border-radius--topright {
+    border-radius: 0 6px 6px 0;
+}
+.link-blue {
+    color: #0072bc;
+}
+.link-green {
+    color: #00a651;
+    margin-left: 20px;
+}
+.link-blue:hover, .link-green:hover {
+    color: #c7383e;
+}
+
+.cusbutton {
+    padding: 7px 35px;
+    border-radius: 4px;
+    font-family: "Roboto Bold";
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+}
+/* .btn-staff {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+} */
+.cusbutton--green {
+    background: #00a651;
+}
+.cusbutton--red {
+    background: #c7383e;
+}
+.border-box {
+    border: solid 1px #a1a1a1;
+    border-radius: 4px;
+    padding: 10px 10px 60px 10px;
+}
+.border-box .item {
+    font-size: 13px;
+    color: #363636;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.border-box .active {
+    background: #00a651;
+    border-radius: 4px;
+    color: #fff;
+}
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0 2px;
+}
+.custom-table--color .bg td {
+    background: #ebebeb;
+}
+
+.side-title {
+    font-family: "Roboto Bold";
+    font-size: 16px;
+    color: #c7383e;
+    text-transform: uppercase;
+    padding: 30px 0 10px 0;
+    text-align: center;
+}
+.side-bar {
+    background: #ececec;
+    padding: 20px;
+    border-radius: 4px;
+}
+.side-bar ul li {
+    background: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+.side-bar ul li:not(:first-child) {
+    margin-top: 5px;
+}
+.side-bar ul li a {
+    padding-left: 15px;
+    color: #363636;
+}
+.side-bar ul li a::before {
+    content: url("../img/icon-attach.png");
+    margin-right: 15px;
+}
+.side-banner {
+    margin-top: 15px;
+}
+footer {
+    background: #760122;
+    padding: 25px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 100px;
+}

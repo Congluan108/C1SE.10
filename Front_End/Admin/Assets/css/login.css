@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dcdcdc59;
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff00;
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #3A3B3C;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(158 158 158 / 40%);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #3A3B3C;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input:focus{
+    border: 2px solid #3A3B3C;
+}
+.input-box input::placeholder{
+    color: #3A3B3C;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 10%;
+    transform: translateY(50%);
+    font-size: 20px;
+    color: #3A3B3C;
+}
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #3A3B3C;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .btn:hover{
+    background-color: #3A3B3C;
+    color: #fff;
+    
+}

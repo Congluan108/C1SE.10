@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>SignEase</title>
+</head>
+<body>
+    <section class="header">  
+        <div class="float-left">
+            <div class="header-noti">
+                <i class='bx bx-bell'></i>
+            </div>
+            <div class="header-user">
+                <span class="user-name" id="user">
+                    Dương Nguyễn Công Luận
+                </span>
+                <ul class="status">
+                    <li><a href="">Thông tin cá nhân</a></li>
+                    <li><a href="./Login.html">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var userName = document.getElementById('user');
+            var status = document.querySelector('.status');
+
+            userName.addEventListener('click', function () {
+                if (status.style.display === 'none' || status.style.display === '') {
+                    status.style.display = 'block';
+                } else {
+                    status.style.display = 'none';
+                }
+            });
+        });     
+    </script>
+    <section class="banner" style="background-image: url(/Users/Assets/img/banner.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-logo">
+                        <a class="logo" href="/"><img src="/Users/Assets/img/SignEase_logo.png"></a>
+                        <p class="banner-text">XÁC NHẬN TÀI LIỆU SINH VIÊN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav id="menu">
+                        <a class="show-menu" href="#" id="openup">MENU <svg class="svg-inline--fa fa-sort-down fa-w-10 icon-menu" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sort-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z"></path></svg></a>
+                        <ul class="menu">
+                            <li class="active">
+                                <a class="icon home" href="/">Trang chủ</a>
+                            </li>
+                            <li class="">
+                                <a class="icon contract" href="/">Tạo tài liệu xác nhận</a>
+                            </li>
+                            <li class="">
+                                <a class="icon contact" href="http://hssv.duytan.edu.vn/" target="_blank">Phòng CTSV</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="category__title">
+                        <p>DANH SÁCH CÁC TÀI LIỆU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-grey">
+                        <div class="New-add">
+                            <a class="cusbutton cusbutton--red" href="./createDoc.html">+ Thêm mới</a>
+                        </div>
+                        <!--------------------TABLE--------------------->
+                        <div class="table-responsive-md margin-top-20">
+                                <table class="table custom-table">
+                                    <thead>
+                                        <tr class="bg">
+                                            <th class="border-radius--topleft paddding-left30" scope="col">STT</th>
+                                            <th>Loại tài liệu</th>
+                                            <th>Thời gian</th>
+                                            <th>Trạng thái</th>
+                                            <th class="border-radius--topright" scope="col"> Thời gian duyệt</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr class="bg">
+                                                <td class="border-radius--topleft hover-red paddding-left30">1</td>
+                                                <td class="hover-red">Xin tạm hoãn nghĩa vụ quân sự </td>
+                                                <td class="hover-red">
+                                                        <span>Năm Học 2023-2024</span>
+                                                </td>
+                                                <td class="document_status">
+                                                        <a style="color: #3cb878" tabindex="0" data-toggle="" data-trigger="" data-content="" class="">
+                                                            Đã Phê Duyệt
+                                                        </a>
+                                                </td>
+                                                <td class="border-radius--topright">
+                                                            <span>Ngày 22/08/2023</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg">
+                                                <td class="border-radius--topleft hover-red paddding-left30">2</td>
+                                                <td class="hover-red">Giấy xác nhận (NVQS, gia cảnh, xin việc, chính sách, nhận thưởng)</td>
+                                                <td class="hover-red">
+                                                            <span>Năm Học 2023-2024</span>
+                                                </td>
+                                                <td class="document_status">
+                                                            <a style="color: #3cb878" tabindex="0" data-toggle="" data-trigger="" data-content="" class="">
+                                                                Đã Phê Duyệt
+                                                            </a>
+                                                </td>
+                                                <td class="border-radius--topright">
+                                                            <span>Ngày 22/08/2023</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg">
+                                                <td class="border-radius--topleft hover-red paddding-left30">3</td>
+                                                <td class="hover-red">Giấy xác nhận Vay vốn cho sinh viên</td>
+                                                <td class="hover-red">
+                                                            <span>Năm Học 2022-2023</span>
+                                                </td>
+                                                <td class="document_status">
+                                                            <a style="color: #3cb878" tabindex="0" data-toggle="" data-trigger="" data-content="" class="">
+                                                                Đã Phê Duyệt
+                                                            </a>
+                                                </td>
+                                                <td class="border-radius--topright">
+                                                            <span>Ngày 15/05/2023</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg">
+                                                <td class="border-radius--topleft hover-red paddding-left30">4</td>
+                                                <td class="hover-red">Giấy xác nhận Vay vốn cho sinh viên</td>
+                                                <td class="hover-red">
+                                                            <span>Năm Học 2021-2022</span>
+                                                </td>
+                                                <td class="document_status">
+                                                            <a style="color: #ff0000" tabindex="0" data-toggle="popover" data-trigger="focus" data-content="Trùng đơn" class="kopheduyet" data-original-title="" title="">
+                                                                Không Phê Duyệt
+                                                            </a>
+                                                </td>
+                                                <td class="border-radius--topright">
+                                                </td>
+                                            </tr>
+                                            <tr class="bg">
+                                                <td class="border-radius--topleft hover-red paddding-left30">5</td>
+                                                <td class="hover-red">Giấy xác nhận Vay vốn cho sinh viên</td>
+                                                <td class="hover-red">
+                                                            <span>Năm Học 2021-2022</span>
+                                                </td>
+                                                <td class="document_status">
+                                                            <a style="color: #3cb878" tabindex="0" data-toggle="" data-trigger="" data-content="" class="">
+                                                                Đã Phê Duyệt
+                                                            </a>
+                                                </td>
+                                                <td class="border-radius--topright">
+                                                        <span>Ngày 17/08/2022</span>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer__text">
+                        <p>Copyright © 2023 - C1SE.10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Users/Assets/js/script.js"></script>
+</body>
+</html>
